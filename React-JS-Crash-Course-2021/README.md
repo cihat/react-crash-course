@@ -1,0 +1,1 @@
+Bu kursta REACT'in props, state, hooks, json server, mock rest api(fake backend), route, 
