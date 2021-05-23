@@ -94,12 +94,12 @@ Bu kursta REACT'in
 - [x] 1:03:13 - Add Task Form
 - [x] 1:06:16 - Form input state (controlled components)
 - [x] 1:09:18 - Add task submit
-- [ ] 1:14:36 - showAddTask state
-- [ ] 1:15:58 - Button toggle
-- [ ] 1:19:33 - Build for production
-- [ ] 1:21:51 - JSON Server
-- [ ] 1:25:53 - useEffect Hook & Fetch tasks from server
-- [ ] 1:30:13 - Delete task from server
-- [ ] 1:31:51 - Add task to server
-- [ ] 1:35:15 - Toggle reminder on server
-- [ ] 1:39:15 - Routing, footer & about
+- [x] 1:14:36 - showAddTask state
+- [x] 1:15:58 - Button toggle
+- [x] 1:19:33 - Build for production
+- [x] 1:21:51 - JSON Server
+- [x] 1:25:53 - useEffect Hook & Fetch tasks from server
+- [x] 1:30:13 - Delete task from server
+- [x] 1:31:51 - Add task to server
+- [x] 1:35:15 - Toggle reminder on server
+- [x] 1:39:15 - Routing, footer & about
