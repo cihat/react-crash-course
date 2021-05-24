@@ -1,6 +1,4 @@
 import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
 
 export default function Home() {
   return (
@@ -9,19 +7,19 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <h3>Ana Sayfa</h3>
 
-      <main>
-        <Link href="/about">
-          Hakkında
-        </Link>
-        <Link href="/blog">
-          Blog
-        </Link>
-        <Link href="/blog/post">
-          Post
-        </Link>
+      {/* <main>
+        <Link href="/about">Hakkında</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/blog/post">Post</Link>
 
-        <Image src="/images/istanbul.jpeg" alt="Istanbul" height="213" width="640"></Image>
+        <Image
+          src="/images/istanbul.jpeg"
+          alt="Istanbul"
+          height="213"
+          width="640"
+        ></Image>
       </main>
 
       <footer>
@@ -33,9 +31,9 @@ export default function Home() {
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
-      </footer>
+      </footer> */}
 
-      <style jsx>{`
+      {/*  <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -180,6 +178,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
+     */}
     </div>
   )
 }

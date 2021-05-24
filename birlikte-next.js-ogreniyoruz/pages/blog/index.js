@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link"
 import Head from "next/head"
 
 const index = () => {
@@ -9,9 +9,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h3>Blog Page</h3>
-      <Link href='/'>
-        Geri Dön
-      </Link>
+      <Link href="/">Geri Dön</Link>
     </div>
   )
 }
