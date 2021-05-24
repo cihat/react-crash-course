@@ -2,7 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+//! getStaticProps --> bu functions ise yukarıdaki getServerSideProps gibi dynamic değilde static işler yapıyor.
+//! Client <---> CDN <--> Server
+export function getStaticProps(context) {
+  console.log(context)
+
+  return {
+    props: {}
+  }
+}
+
+//! server (SSR) + client(hydration)
+export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
