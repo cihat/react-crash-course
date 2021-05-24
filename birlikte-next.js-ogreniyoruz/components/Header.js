@@ -34,6 +34,8 @@ const Header = () => {
             border-bottom: 1px solid #ccc;
             ul {
               display: flex;
+              justify-content: center;
+              
               li {
                 a {
                   height: 60px;
