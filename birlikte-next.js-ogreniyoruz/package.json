@@ -1,14 +1,14 @@
 {
-  "homepage": "http://cihat.github.io/react-crash-course",
-  "name": "learn-starter",
+  "homepage": "https://cihat.github.io/react-crash-course/",
+  "name": "birlikte-next-js-ogreniyoruz",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "next": "^10.0.0",
