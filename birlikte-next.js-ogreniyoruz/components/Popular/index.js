@@ -2,7 +2,7 @@ import Link from "next/link"
 import styles from './popular.module.scss'
 
 const popular = ({ movies }) => {
-  // console.log(movies)
+  console.log(movies)
 
   return (
     <div className={styles.popular}>
@@ -18,7 +18,8 @@ const popular = ({ movies }) => {
               <h3>{movie.title}</h3>
               <img
                 src={`https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}`}
-                alt=""
+                alt={`${movie.title}`}
+                title={`${movie.title}`}
               />
             </a>
           </Link>
