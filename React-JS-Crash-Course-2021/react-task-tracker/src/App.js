@@ -8,7 +8,6 @@ import Tasks from './components/Tasks'
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
-
   const [tasks, setTasks] = useState([])
 
   useEffect(() => {
@@ -16,7 +15,6 @@ function App() {
       const tasksFromServer = await fetchTasks()
       setTasks(tasksFromServer)
     }
-
     getTasks()
   }, [])
 
