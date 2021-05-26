@@ -69,6 +69,7 @@ Timestamps:
 3. [Advanced Next.js Course | Learn Next.js in 2021](https://www.youtube.com/watch?v=EJVGzyWSCBE)
 
 Timestamps
+
 - [x] 00:00 codedamn Intro
 - [x] 01:19 Introduction
 - [x] 02:28 Environment Variables
@@ -87,5 +88,32 @@ Timestamps
 - [x] 01:52:38 Outro
 
 4. [Birlikte Next.js Öğreniyoruz](https://www.youtube.com/watch?v=XSc2MzIqUqw&t=87s)
+
+5. [Learning Next.js Page](https://nextjs.org/learn/basics/data-fetching/two-forms)
+
+- ### When to Use Static Generation v.s. Server-side Rendering
+
+  We recommend using Static Generation (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+  You should ask yourself: "Can I pre-render this page ahead of a user's request?" If the answer is yes, then you should choose Static Generation. On the other hand, Static Generation is not a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+  In that case, you can use Server-side Rendering. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate frequently updated data.
+
+  #### Static Generation with Data using `getStaticProps`
+
+  ```javascript
+      export default function Home(props) { ... }
+
+      export async function getStaticProps() {
+        // Get external data from the file system, API, DB, etc.
+        const data = ...
+
+        // The value of the `props` key will be
+        //  passed to the `Home` component
+        return {
+          props: ...
+        }
+      }
+  ```
+
+  **Note**: In development mode, getStaticProps runs on each request instead.
 
 - [x] [How to deploy React App to GitHub Pages](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
